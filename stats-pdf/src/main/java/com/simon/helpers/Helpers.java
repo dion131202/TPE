@@ -123,14 +123,14 @@ public final class Helpers{
             if (z < -3.0) z = -3.0;
             else if (z > 3.0) z = 3.0;
 
-            // remap vers [0,1]
-            double v01 = (z + 3.0) / 6.0;
-
-            if(BAD_COLS.contains(k)) {
-                v01 = -v01; // valeur négative pour les mauvaises colonnes
+            // si "mauvaise" colonne, on inverse le signe : plus c'est grand, plus c'est "mauvais" => score négatif
+            if (BAD_COLS.contains(k)) {
+                z = -z;
             }
+            // mapping linéaire vers [-1, 1] (z ∈ [-3,3] -> s ∈ [-1,1])
+            double s = z / 3.0;
 
-            zmap.put(k, v01); 
+            zmap.put(k, s); 
         }
 
         return zmap;

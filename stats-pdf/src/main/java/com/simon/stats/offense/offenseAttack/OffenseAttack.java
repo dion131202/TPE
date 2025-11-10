@@ -9,7 +9,7 @@ public class OffenseAttack {
 
     HashMap<String, Double> stats;
 
-    OffenseAttackGood offenseAttackGood;
+    public OffenseAttackGood offenseAttackGood;
     OffenseAttackBad offenseAttackBad;
 
     public OffenseAttack(HashMap<String, Double> stats){

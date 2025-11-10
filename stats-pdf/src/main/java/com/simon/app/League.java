@@ -21,4 +21,20 @@ public class League{
     public void addGame(Game game){
         this.games.add(game);
     }
+
+    public Object getName() {
+        
+        return this.leagueName;
+    
+    }
+
+    public String getSeason() {
+        
+        return Integer.toString(this.season);
+    }
+
+    public ArrayList<Game> getGames() {
+        
+        return this.games;
+    }
 }

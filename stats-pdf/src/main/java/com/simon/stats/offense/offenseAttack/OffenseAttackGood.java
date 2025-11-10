@@ -8,7 +8,7 @@ public class OffenseAttackGood {
 
     double shotAttemptsFromDangerZone;
     double shotsWithRebounds; 
-    double shotAttempts; 
+    public double shotAttempts; 
     double shotsOnGoalFromDangerZone;
     double scoringChances;
     double scoringChancesPerShot;

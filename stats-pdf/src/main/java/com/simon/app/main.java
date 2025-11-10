@@ -1,6 +1,7 @@
 package com.simon.app;
-import java.io.IOException;
 
+import java.io.IOException;
+import java.nio.file.Path;
 public class main {
     public static void main(String[] args) throws IOException {
 
@@ -137,6 +138,23 @@ public class main {
 
         RSEQUniversitaireD22025ETSVSUQO251011.addStatsToTeams();
 
+        Path pdf1 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251011-ETS",   
+                "G004",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf1.toAbsolutePath());
+
+        
+        Path pdf2 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251011-UQO",
+                "G004",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf2.toAbsolutePath());
+
 
 
 
@@ -164,6 +182,23 @@ public class main {
 
         RSEQUniversitaireD22025UQACVSConcordia251012.addStatsToTeams();
 
+        Path pdf3 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251012-UQAC",   
+                "G005",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf3.toAbsolutePath());
+
+        
+        Path pdf4 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251012-Concordia",
+                "G005",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf4.toAbsolutePath());
+
 
 
 
@@ -188,6 +223,23 @@ public class main {
         RSEQUniversitaireD22025UQOVSConcordia251017.setTeamsZScores();
 
         RSEQUniversitaireD22025UQOVSConcordia251017.addStatsToTeams();
+
+        Path pdf5 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251017-UQO",   
+                "G006",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf5.toAbsolutePath());
+
+        
+        Path pdf6 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251017-Concordia",
+                "G006",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf6.toAbsolutePath());
 
 
 
@@ -216,6 +268,23 @@ public class main {
 
         RSEQUniversitaireD22025ETSVSConcordia251018.addStatsToTeams();
 
+        Path pdf7 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251018-ETS",   
+                "G007",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf7.toAbsolutePath());
+
+        
+        Path pdf8 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251018-Concordia",
+                "G007",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf8.toAbsolutePath());
+
 
 
 
@@ -241,6 +310,23 @@ public class main {
         RSEQUniversitaireD22025ETSVSConcordia251025.setTeamsZScores();
 
         RSEQUniversitaireD22025ETSVSConcordia251025.addStatsToTeams();
+
+        Path pdf9 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251025-ETS",   
+                "G008",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf9.toAbsolutePath());
+
+        
+        Path pdf10 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251025-Concordia",
+                "G008",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf10.toAbsolutePath());
 
 
 
@@ -268,6 +354,23 @@ public class main {
 
         RSEQUniversitaireD22025UQACVSUQO251025.addStatsToTeams();
 
+        Path pdf11 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251025-UQAC",   
+                "G009",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf11.toAbsolutePath());
+
+        
+        Path pdf12 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251025-UQO",
+                "G009",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf12.toAbsolutePath());
+
 
 
 
@@ -293,6 +396,23 @@ public class main {
         RSEQUniversitaireD22025UQACVSUQO251026.setTeamsZScores();
 
         RSEQUniversitaireD22025UQACVSUQO251026.addStatsToTeams();
+
+        Path pdf13 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251026-UQAC",   
+                "G010",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf13.toAbsolutePath());
+
+        
+        Path pdf14 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251026-UQO",
+                "G010",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf14.toAbsolutePath());
 
 
 
@@ -320,6 +440,23 @@ public class main {
 
         RSEQUniversitaireD22025ETSVSConcordia251031.addStatsToTeams();
 
+        Path pdf15 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251031-ETS",   
+                "G011",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf15.toAbsolutePath());
+
+        
+        Path pdf16 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251031-Concordia",
+                "G011",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf16.toAbsolutePath());
+
 
 
 
@@ -345,6 +482,23 @@ public class main {
 
         RSEQUniversitaireD22025UQACVSUQO251101.addStatsToTeams();
 
+        Path pdf17 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251101-UQAC",   
+                "G012",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf17.toAbsolutePath());
+
+        
+        Path pdf18 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251101-UQO",
+                "G012",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf18.toAbsolutePath());
+
 
 
 
@@ -354,7 +508,7 @@ public class main {
 
 
         System.out.println("\n\n\n\n\n\n\n\n\n\nCreating a new game");
-        Game RSEQUniversitaireD22025ETSVSUQAC251102 = new Game("G0013", 
+        Game RSEQUniversitaireD22025ETSVSUQAC251102 = new Game("G013", 
                                                                 "2025-11-02", 
                                                                 "c:/Users/dion1/P2-TPE/RSEQUniversitaireD22025/ETS/RSEQUniversitaireD22025-ETS-VS-UQAC-02-11-25.csv",
                                                                 "c:/Users/dion1/P2-TPE/RSEQUniversitaireD22025/UQAC/RSEQUniversitaireD22025-UQAC-VS-ETS-02-11-25.csv",
@@ -371,6 +525,24 @@ public class main {
 
         RSEQUniversitaireD22025ETSVSUQAC251102.addStatsToTeams();
 
+        Path pdf19 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251102-ETS",   
+                "G013",           
+                "team1",         
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf19.toAbsolutePath());
+
+        
+        Path pdf20 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251102-UQAC",
+                "G013",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf20.toAbsolutePath());
+    
+
 
 
 
@@ -380,7 +552,7 @@ public class main {
 
 
         System.out.println("\n\n\n\n\n\n\n\n\n\nCreating a new game");
-        Game RSEQUniversitaireD22025ETSVSConcordia251108 = new Game("G012", 
+        Game RSEQUniversitaireD22025ETSVSConcordia251108 = new Game("G014", 
                                                                 "2025-11-08", 
                                                                 "c:/Users/dion1/P2-TPE/RSEQUniversitaireD22025/ETS/RSEQUniversitaireD22025-ETS-VS-Concordia-08-11-25.csv",
                                                                 "c:/Users/dion1/P2-TPE/RSEQUniversitaireD22025/Concordia/RSEQUniversitaireD22025-Concordia-VS-ETS-08-11-25.csv",
@@ -396,5 +568,22 @@ public class main {
         RSEQUniversitaireD22025ETSVSConcordia251108.setTeamsZScores();
 
         RSEQUniversitaireD22025ETSVSConcordia251108.addStatsToTeams();
+
+        
+        Path pdf21 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251108-ETS",  
+                "G014",         
+                "team1",           
+                RSEQUniversitaireD22025 
+        );
+        System.out.println("PDF 1 écrit ici : " + pdf21.toAbsolutePath());
+
+        Path pdf22 = PdfReportGenerator.generateGameReport(
+                "RSEQUniversitaireD22025-20251108-Concordia",
+                "G014",
+                "team2",
+                RSEQUniversitaireD22025
+        );
+        System.out.println("PDF 2 écrit ici : " + pdf22.toAbsolutePath());
     }
 }

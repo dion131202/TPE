@@ -55,4 +55,9 @@ public class Team {
             return Helpers.zScoresPerGame(teamStats, this.meanPerStatsAgainst, this.stdDevPerStatsAgainst);
         }
     }
+
+    public String getName() {
+        
+        return this.teamName;
+    }
 }

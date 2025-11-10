@@ -12,7 +12,7 @@ public class Offense{
 
     HashMap<String, Double> stats;
     OffenseWithoutPuck offenseWithoutPuck;
-    OffenseAttack offenseAttack;
+    public OffenseAttack offenseAttack;
     OffenseControl offenseControl;
     Entries entries;
 

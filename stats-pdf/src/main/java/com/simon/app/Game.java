@@ -427,5 +427,25 @@ public class Game {
         energyManagementEvaluationTeam2 = (energyManagementEvaluationForTeam2 + energyManagementEvaluationAgainstTeam2) / 2.0;
         physicalityEvaluationTeam2 = (physicalityEvaluationForTeam2 + physicalityEvaluationAgainstTeam2) / 2.0;
     }
+
+    public Object getDate() {
+        
+        return date;
+    }
+
+    public Object getId() {
+        
+        return gameId;
+    }
+
+    public Team getTeam1() {
+        
+        return team1;
+    }
+
+    public Team getTeam2() {
+        
+        return team2;
+    }
     
 }

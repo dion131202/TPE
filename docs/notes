@@ -1,3 +1,5 @@
+À faire: améliorer calculs des évaluations (ex. appliquer facteurs, etc), esthétique et afficher stats brutes et autres
+
 0- Pour setup, on sélectionne tous dans le configurator de TPE sauf goaltending.
 On sélectionne également seulement 5 vs 5 et pas la position de gardien
 
@@ -27,3 +29,4 @@ Par rapport au dernier point, faire la moyenne des pourcentage n'est pas accurat
 
 5- Évaluation globale prend toutes les statistiques du excel incluant celles qu'on a laissées de côté
 (il y en a beaucoup)
+

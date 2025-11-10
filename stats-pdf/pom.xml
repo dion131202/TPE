@@ -79,7 +79,7 @@
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <!-- Ajuste si ta classe main est ailleurs -->
-                  <mainClass>com.simon.App</mainClass>
+                  <mainClass>com.simon.main</mainClass>
                 </transformer>
               </transformers>
             </configuration>
