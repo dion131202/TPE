@@ -1,0 +1,29 @@
+0- Pour setup, on sélectionne tous dans le configurator de TPE sauf goaltending.
+On sélectionne également seulement 5 vs 5 et pas la position de gardien
+
+Manque ets vs uqo 7 novembre
+manque uqac vs concordia 11 novembre
+
+1-On ne prend pas toutes les statistiques du excel, 
+est-ce qu'on prend des valeurs en trop? 
+est-ce qu'on oublie des statistiques (oui car on a pas encore pp et pk)
+Et est-ce qu'on sépare bien nos statistiques?
+On laisse tomber TOI pour l'instant (on pourrait calculer l'écart-type dans energyManagement)
+Les colonnes a moyenner sont seulement celles qui font parties de notre analyse. D'autres on fait la somme mais c'est car on ne les utilise pas.
+Est-ce qu'il y a des colonnes a moyenner qu'on utilise mais on fait la somme?
+Dans le calcul de la moyenne, on ne prend pas en compte la valeur 0 donc c'est une source d'erreur car un joueur peut être 0 en 7 et ce n'est pas pris en compte.
+Par rapport au dernier point, faire la moyenne des pourcentage n'est pas accurate.
+
+2- Enjeux qui amènerait à du réusinage
+    -Complexité (beaucoup de double et tableaux)
+    -Point 1
+    -Séparation des classes
+
+3-Comprendre le Comprendr
+    -TeamStats (importation du excel)
+
+4-Vérifier si valeurs sont bonnes
+    -TeamStats (importation du excel)
+
+5- Évaluation globale prend toutes les statistiques du excel incluant celles qu'on a laissées de côté
+(il y en a beaucoup)

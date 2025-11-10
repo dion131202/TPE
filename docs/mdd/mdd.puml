@@ -1,0 +1,304 @@
+@startuml
+
+title MDD du projet
+
+class League{
+    leagueName : string
+    season : int
+    games : ArrayList<Game>
+    teams : ArrayList<Team>
+}
+
+class "Game"{
+    gameId : string
+    date : string
+    filePath : string
+    team1 : string
+    team2 : string 
+    team1StatsFor : teamStats
+    team1StatsAgainst : teamStats
+    team2StatsFor : teamStats
+    team2StatsAgainst : teamStats
+}
+
+class "Team"{
+    teamName : string
+}
+
+class "teamStats"{
+    gameId : string
+    teamName : string
+    isTeamFor : boolean
+    filePath : string
+}
+
+class offense{
+    filePath : string
+    exits : exits
+    offenseAttack : offenseAttack
+    offenseControl : offenseControl
+    entries : entries
+}
+
+class offenseAttack{
+    filePath : string
+    offenseAttackGood : offenseAttackGood
+    offenseAttackBad : offenseAttackBad
+}
+
+class offenseAttackGood{
+    filePath : string
+    shotAttemptsFromDangerZone : double
+    shotsWithRebounds : double
+    shotAttempts : double
+    shotsOnGoalFromDangerZone : double
+    scoringChances : double
+    scoringChancesPerShot : double
+    goalsFromDangerZone : double
+    goals : double
+    oneTimerGoals : double
+    goalsAfterRebound : double
+}
+
+class offenseAttackBad{
+    filePath : string
+    shotsMissedNet : double
+    shotsBlocked : double
+}
+
+class offenseControl{
+    filePath : string
+    offenseControlGood : offenseControlGood
+    offenseControlBad : offenseControlBad
+}
+
+class offenseControlGood{
+    filePath : string
+    successfulPassesOZ : double
+    passingAccuracyOZPct : double
+    timePerPossessionOZ : double
+    numberOfPossessionsOZ : double
+    possessionTimeOZ : double
+}
+
+class offenseControlBad{
+    filePath : string
+    unsuccessfulPassesOZ : double
+    giveawaysOZ : double
+    giveAwayOZPct : double
+    dispossessedOZ : double
+}
+
+class entries{
+    filePath : string
+    controlledEntries : controlledEntries
+    uncontrolledEntries : uncontrolledEntries
+}
+
+class controlledEntries{
+    filePath : string
+    controlledEntriesGood : controlledEntriesGood
+    controlledEntriesBad : controlledEntriesBad
+}
+
+class controlledEntriesGood{
+    filePath : string
+    successfulControlledEntries : double
+    passInEntries : double
+    carryInEntries : double
+    controlledEntriesPct : double
+}
+
+class controlledEntriesBad{
+    filePath : string
+    failedControlledEntries : double
+}
+
+class uncontrolledEntries{
+    filePath : string
+    uncontrolledEntriesGood : uncontrolledEntriesGood
+    uncontrolledEntriesBad : uncontrolledEntriesBad
+}
+
+class uncontrolledEntriesGood{
+    filePath : string
+    successfulUncontrolledEntries : double
+    dumpInEntries : double
+}
+
+class uncontrolledEntriesBad{
+    filePath : string
+    failedUncontrolledEntries : double
+}
+
+class offenseWithoutPuck{
+    filePath : string
+    puckRecoveriesOZ : double
+    reboundRecoveriesOZ : double
+    interceptionsOZ : double
+}
+
+class defense{
+    filePath : string
+    exits : exits
+    defensiveZoneDefense : defensiveZoneDefense
+    neutralZoneDefense : neutralZoneDefense
+}
+
+class defensiveZoneDefense{
+    filePath : string
+    blockedShots : double
+    puckRecoveriesDZ : double
+    reboundRecoveriesDZ : double
+    interceptionsDZ : double
+}
+
+class neutralZoneDefense{
+    filePath : string
+    interceptionsNZ : double
+    puckRecoveriesNZ : double
+    reboundRecoveriesNZ : double
+}
+
+class exits{
+    filePath : string
+    exitsGood : exitsGood
+    exitsBad : exitsBad
+}
+
+class exitsGood{
+    filePath : string
+    successfulPassesDZ : double
+    passingAccuracyDZPct : double
+    successfulControlledExits : double
+    successfulUncontrolledExits : double
+    carryOutExits : double
+    dumpOutExits : double
+    passOutExits : double
+    controlledExitsPct : double
+    timePerPossessionDZ : double
+    numberOfPossessionsDZ : double
+    possessionTimeDZ : double
+}
+
+class exitsBad{
+    filePath : string
+    failedUncontrolledExits : double
+    failedControlledExits : double
+    unsuccessfulPassesDZ : double
+    giveawaysDZ : double
+    giveAwayDZPct : double
+    dispossessedDZ : double
+}
+
+class transition{
+    filePath : string
+    transitionBad : transitionBad
+    transitionGood : transitionGood
+}
+
+class transitionGood{
+    filePath : string
+    passingAccuracyNZPct : double
+    successfulPassesNZ : double
+    timePerPossessionNZ : double
+    numberOfPossessionsNZ : double
+    possessionTimeNZ : double
+}
+
+class transitionBad{
+    filePath : string
+    unsuccessfulPassesNZ : double
+    giveAwayNZPct : double
+    giveawaysNZ : double
+    dispossessedNZ : double
+}
+
+class energyManagement{
+    filePath : string
+    avgShiftLength : double
+    avgRestTime : double
+    hitTaken : double
+}
+
+class physicality{
+    filePath : string
+    stickAndBodyChecks : double 
+    hitDelivered : double
+}
+
+class passing{
+    filePath : string
+}
+
+class recoveries{
+    filePath : string
+}
+
+class interceptions{
+    filePath : string
+}
+
+class giveaways{
+    filePath : string
+}
+
+class possession{
+    filePath : string
+}
+
+class faceoffs{
+    filePath : string
+}
+
+class xG{
+    filePath : string
+}
+
+"League" "1" -- "1..*" "Team" : contient >
+
+"League" "1" -- "0..*" "Game" : contient >
+
+"Game" "1" -- "2" "Team" : contient >
+
+"Game" "1" -- "4" "teamStats" : contient >
+
+"Team" "1" -- "1..*" "teamStats" : contient >
+
+"teamStats" "1" -- "1" "offense" : contient >
+"teamStats" "1" -- "1" "defense" : contient >
+"teamStats" "1" -- "1" "transition" : contient >
+"teamStats" "1" -- "1" "energyManagement" : contient >
+"teamStats" "1" -- "1" "physicality" : contient >
+
+"offense" "1" -- "1" "offenseAttack" : contient >
+"offense" "1" -- "1" "offenseControl" : contient >
+"offense" "1" -- "1" "entries" : contient >
+"offense" "1" -- "1" "offenseWithoutPuck" : contient >
+
+"defense" "1" -- "1" "defensiveZoneDefense" : contient >
+"defense" "1" -- "1" "neutralZoneDefense" : contient >
+"defense" "1" -- "1" "exits" : contient >
+
+"transition" "1" -- "1" "transitionGood" : contient >
+"transition" "1" -- "1" "transitionBad" : contient >
+
+"offenseAttack" "1" -- "1" "offenseAttackGood" : contient >
+"offenseAttack" "1" -- "1" "offenseAttackBad" : contient >
+
+"offenseControl" "1" -- "1" "offenseControlGood" : contient >
+"offenseControl" "1" -- "1" "offenseControlBad" : contient >
+
+"entries" "1" -- "1" "controlledEntries" : contient >
+"entries" "1" -- "1" "uncontrolledEntries" : contient >
+
+"exits" "1" -- "1" "exitsGood" : contient >
+"exits" "1" -- "1" "exitsBad" : contient >
+
+"controlledEntries" "1" -- "1" "controlledEntriesGood" : contient >
+"controlledEntries" "1" -- "1" "controlledEntriesBad" : contient >
+
+"uncontrolledEntries" "1" -- "1" "uncontrolledEntriesGood" : contient >
+"uncontrolledEntries" "1" -- "1" "uncontrolledEntriesBad" : contient >
+
+@enduml
