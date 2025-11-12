@@ -4,11 +4,11 @@ import java.util.HashMap;
 
 public class OffenseAttackGood {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double shotAttemptsFromDangerZone;
     double shotsWithRebounds; 
-    public double shotAttempts; 
+    double shotAttempts; 
     double shotsOnGoalFromDangerZone;
     double scoringChances;
     double scoringChancesPerShot;

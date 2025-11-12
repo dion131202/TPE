@@ -1,4 +1,8 @@
-À faire: améliorer calculs des évaluations (ex. appliquer facteurs, etc), esthétique et afficher stats brutes et autres
+À faire: s'assurer que les stats négatives affichent en vert si elles sont basses et vice-versa
+améliorer calculs des évaluations (ex. appliquer facteurs, etc), esthétique et afficher stats brutes et autres
+regler affichage des stats de energyManagement
+
+Mettre des getters au lieu dattributs publics
 
 0- Pour setup, on sélectionne tous dans le configurator de TPE sauf goaltending.
 On sélectionne également seulement 5 vs 5 et pas la position de gardien

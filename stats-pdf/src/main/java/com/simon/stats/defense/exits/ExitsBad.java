@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class ExitsBad {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double failedUncontrolledExits;
     double failedControlledExits;

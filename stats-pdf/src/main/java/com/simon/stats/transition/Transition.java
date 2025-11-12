@@ -7,9 +7,9 @@ import com.simon.helpers.Helpers;
 
 public class Transition {
 
-    HashMap<String, Double> stats;
-    TransitionBad transitionBad;
-    TransitionGood transitionGood;
+    public HashMap<String, Double> stats;
+    public TransitionBad transitionBad;
+    public TransitionGood transitionGood;
 
     public Transition(HashMap<String, Double> stats){
         this.stats = stats;

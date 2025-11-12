@@ -8,10 +8,10 @@ import com.simon.stats.defense.exits.Exits;
 
 public class Defense {
 
-    HashMap<String, Double> stats;
-    Exits exits;
-    DefensiveZoneDefense defensiveZoneDefense;
-    NeutralZoneDefense neutralZoneDefense;
+    public HashMap<String, Double> stats;
+    public Exits exits;
+    public DefensiveZoneDefense defensiveZoneDefense;
+    public NeutralZoneDefense neutralZoneDefense;
 
     public Defense(HashMap<String, Double> stats){
         this.stats = stats;

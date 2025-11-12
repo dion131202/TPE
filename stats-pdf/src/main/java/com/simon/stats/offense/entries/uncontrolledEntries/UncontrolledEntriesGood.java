@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class UncontrolledEntriesGood {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double successfulUncontrolledEntries;
     double dumpInEntries;

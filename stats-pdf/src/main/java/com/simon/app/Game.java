@@ -447,5 +447,25 @@ public class Game {
         
         return team2;
     }
+
+    public HashMap<String, Double> getAllzScoresPerGameForTeam1() {
+        
+        return allzScoresPerGameForTeam1;
+    }
+
+    public HashMap<String, Double> getAllzScoresPerGameAgainstTeam1() {
+        
+        return allzScoresPerGameAgainstTeam1;
+    }
+
+    public HashMap<String, Double> getAllzScoresPerGameForTeam2() {
+        
+        return allzScoresPerGameForTeam2;
+    }
+
+    public HashMap<String, Double> getAllzScoresPerGameAgainstTeam2() {
+        
+        return allzScoresPerGameAgainstTeam2;
+    }
     
 }

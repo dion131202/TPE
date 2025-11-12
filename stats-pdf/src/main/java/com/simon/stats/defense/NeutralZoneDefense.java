@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class NeutralZoneDefense {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double interceptionsNZ;
     double puckRecoveriesNZ;

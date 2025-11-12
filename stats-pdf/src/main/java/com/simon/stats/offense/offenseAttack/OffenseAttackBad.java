@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class OffenseAttackBad {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double shotsMissedNet;
     double shotsBlocked;

@@ -9,10 +9,10 @@ import com.simon.stats.offense.entries.uncontrolledEntries.UncontrolledEntries;
 
 public class Entries {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
-    ControlledEntries controlledEntries;
-    UncontrolledEntries uncontrolledEntries;
+    public ControlledEntries controlledEntries;
+    public UncontrolledEntries uncontrolledEntries;
 
     public Entries(HashMap<String, Double> stats){
         this.stats = stats;

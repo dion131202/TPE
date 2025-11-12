@@ -7,10 +7,10 @@ import com.simon.helpers.Helpers;
 
 public class Exits {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
-    ExitsGood exitsGood;
-    ExitsBad exitsBad;
+    public ExitsGood exitsGood;
+    public ExitsBad exitsBad;
 
     public Exits(HashMap<String, Double> stats){
         this.stats = stats;

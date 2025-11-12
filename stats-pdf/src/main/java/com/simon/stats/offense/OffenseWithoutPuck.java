@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class OffenseWithoutPuck {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double puckRecoveriesOZ;
     double reboundRecoveriesOZ;

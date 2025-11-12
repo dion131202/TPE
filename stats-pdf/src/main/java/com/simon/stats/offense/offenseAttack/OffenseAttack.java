@@ -7,10 +7,10 @@ import com.simon.helpers.Helpers;
 
 public class OffenseAttack {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     public OffenseAttackGood offenseAttackGood;
-    OffenseAttackBad offenseAttackBad;
+    public OffenseAttackBad offenseAttackBad;
 
     public OffenseAttack(HashMap<String, Double> stats){
         this.stats = stats;

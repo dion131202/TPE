@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class OffenseControlGood {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double successfulPassesOZ;
     double passingAccuracyOZPct;

@@ -3,7 +3,7 @@ package com.simon.stats;
 import java.util.HashMap;
 
 public class Physicality {
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
     double stickAndBodyChecks; 
     double hitDelivered;
 

@@ -7,10 +7,10 @@ import com.simon.helpers.Helpers;
 
 public class UncontrolledEntries {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
-    UncontrolledEntriesGood uncontrolledEntriesGood;
-    UncontrolledEntriesBad uncontrolledEntriesBad;
+    public UncontrolledEntriesGood uncontrolledEntriesGood;
+    public UncontrolledEntriesBad uncontrolledEntriesBad;
 
     public UncontrolledEntries(HashMap<String, Double> stats){
         this.stats = stats;

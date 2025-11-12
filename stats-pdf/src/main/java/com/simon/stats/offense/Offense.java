@@ -10,12 +10,11 @@ import com.simon.stats.offense.offenseControl.OffenseControl;
 
 public class Offense{
 
-    HashMap<String, Double> stats;
-    OffenseWithoutPuck offenseWithoutPuck;
+    public HashMap<String, Double> stats;
+    public OffenseWithoutPuck offenseWithoutPuck;
     public OffenseAttack offenseAttack;
-    OffenseControl offenseControl;
-    Entries entries;
-
+    public OffenseControl offenseControl;
+    public Entries entries;
     public Offense(HashMap<String, Double> stats) {
 
         this.stats = stats;

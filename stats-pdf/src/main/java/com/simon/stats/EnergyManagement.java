@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class EnergyManagement {
 
-    HashMap<String, Double> stats;
+    public HashMap<String, Double> stats;
 
     double avgShiftLength;
     double avgRestTime;
